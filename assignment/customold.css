@@ -1,0 +1,128 @@
+    /*fonts*/
+
+    /* background image*/
+    body {
+      background-color: lightslategray;
+    }
+  
+    /* footer */
+    ul {
+      position: relative;
+      list-style-type: none;
+      width: auto;
+      margin: 0;
+      bottom: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color:#333;
+      color: white;
+
+      /* list-style-type: none;
+      position: relative;
+      margin: 0;
+      overflow: hidden;
+      right: 0;
+      width: 100%;
+      background-color: #333;
+      color: white;
+      padding: 15px 16px; */
+      
+      /* rounded corners*/
+
+      border-radius: 5px;
+    }
+    li {
+      float: left;
+    }
+     li a {
+       display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+     }
+     li a:hover {
+       background-color: rgba(255, 255, 255, 0.123);
+     }
+     .grid-container {  
+      display: grid;
+      height: 500px;
+      align-content: center;
+      /* grid-template-columns: auto auto auto; */
+      /* grid-gap: 10px; */
+      background-color: rgba(245, 3, 3, 0.144);
+      padding: 10px;
+    }
+    
+    .grid-container > div {
+      background-color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+      padding: 20px 0;
+      font-size: 30px;
+    }
+
+    /*second grid */
+    .grid-container1 {
+      display: grid;
+      height: 300px;
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+      align-content: center;
+      grid-template-columns: auto auto auto;
+      grid-gap: 200px; 
+      background-color:rgba(255, 255, 255, 0.849)  ;
+      padding: 100px;
+    }
+
+    .box{
+      display: flex;
+
+
+    }
+    
+    .grid-container1 > div {
+      background-color: rgba(104, 104, 104, 0.548);
+      text-align: center;
+      height: 400px;
+      /* padding: 20px; */
+      /* font-size: 30px; */
+      color: white;
+    }
+
+
+    /*third grid*/
+    .grid-container3 {
+      display: grid;
+      height: 500px;
+      align-content: center;
+      /* grid-template-columns: auto auto auto; */
+      /* grid-gap: 10px; */
+      background-color: rgba(255, 255, 255, 0.027);
+      padding: 10px;
+    }
+    
+    .grid-container3 > div {
+      background-color: rgba(255, 255, 255, 0);
+      text-align: center;
+      padding: 20px 0;
+      font-size: 30px;
+      color: white;
+    }
+
+    .header {
+      position: fixed;
+      list-style-type: none;
+      left: 0;
+      top: 0;
+      width: 100%;
+      background-color: #333;
+      color: white;
+      text-align: center;
+   }
+    
+    
+    
+
+
+  
