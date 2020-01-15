@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#test").click(function () {
+        alert("hello");  
+      });
+    });
+  </script>
+
+  <style>
+  
+
+
+.bg-modal {
+  background-color: rgba(0, 0, 0, 0.8);
+  margin: auto;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+.modal-contents {
+	height: 300px;
+	width: 500px;
+	background-color: white;
+	text-align: center;
+	padding: 20px;
+	position: relative;
+	border-radius: 4px;
+}
+
+input {
+	margin: 15px auto;
+	display: block;
+	width: 50%;
+	padding: 8px;
+	border: 1px solid gray;
+}
+
+.close {
+	position: absolute;
+	top: 0;
+	right: 10px;
+	font-size: 42px;
+	color: #333;
+	transform: rotate(45deg);
+	cursor: pointer;
+	
+}
+
+  </style>
+
+
+
+
+</head>
+<body>
+
+  <button id="test" name="test">second button</button>
+
+
+  
+  <!-- Hero Image -->
+  
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Let's create a modal</h1>
+      <h3>Sign Up Now</h3>
+      <button id="click">click to sign up</button>
+    </div>
+  </section>
+
+  <!-- Modal Section -->
+  
+  <div class="bg-modal" id="my_form">
+    <div class="modal-contents">
+  
+      <div class="close">+</div>
+  
+      <form id="myForm">
+        <label>Name</label>
+    <input type="text" name="name" id="field1"/>
+    <label>Email</label>
+    <input type="email" name="email" id="field2"/>
+    <input type="submit" id="submit" name="submit" value="Submit Form" />
+      </form>
+  
+    </div>
+  </div>        
+</form>
+<script>document.getElementById('click').addEventListener("click", function() {
+	document.querySelector('.bg-modal').style.display = "flex";
+});
+
+''
+$('#submit').on('click', function(e){
+e.preventDefault
+var thisFormData = $('#myForm').serialize();
+alert(thisFormData);
+$('#myForm').submit();
+});
+
+
+document.querySelector('.close').addEventListener("click", function() {
+	document.querySelector('.bg-modal').style.display = "none";
+});</script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+* {
+  padding:0px;
+  margin:0px;
+  box-sizing: border-box;
+}
+
+.back-img {
+  height: 100vh;
+  background-image: url("./images/cta01.jpg");
+  background-attachment: fixed;
+  background-size:cover;   
+}
+#transparent {
+  background-color: rgba(184, 0, 0, 0.596); 
+}
+
+#transparent1 {
+  background-image: linear-gradient(to right, red , black);
+}
+
+.JumboHeaderImg{  
+  background-image: url("./images/bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -1;
+
+  
+}
+
+.mars {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+body {
+font-family: "Lato", sans-serif;
+}
+ 
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align:center;
+  color: white;
+}
+ 
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+
+}
+ 
+.sidenav a:hover{
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.dark_grey{
+  background-color:rgb(22, 22, 22);
+}
+
+.ico {
+
+}
+
+@media screen and (max-width: 768px) {
+  .card-columns {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+}
+}
+@media (max-width: 576px){
+  .card-columns {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+}
+}
